@@ -22,7 +22,7 @@ jobs:
 
       - run: yarn install
 
-      - run: sudo yarn add packageName i -g supermodel-cli
+      - run: sudo yarn global add supermodel-cli
 
       - save_cache:
           paths:
