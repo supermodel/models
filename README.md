@@ -1,2 +1,3 @@
-# models
-Example and testing models &lt;https://supermodel.io/supermodel>
+# Models
+
+Supermodel.io example and testing models <https://supermodel.io/supermodel>

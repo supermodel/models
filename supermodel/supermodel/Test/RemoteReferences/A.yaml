@@ -1,0 +1,15 @@
+$id: http://supermodel.io/supermodel/Test/RemoteReferences/A
+$schema: http://json-schema.org/draft-07/schema#
+
+title: A
+type: object
+
+allOf:
+  - $ref: B
+
+properties:
+  a:
+    type: string
+
+required:
+  - a
