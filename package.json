@@ -1,0 +1,19 @@
+{
+  "name": "models",
+  "version": "0.1.0",
+  "description": "Supermodel example and testing models",
+  "main": "index.js",
+  "scripts": {
+    "test": "supermodel schema validate supermodel/supermodel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supermodel/models.git"
+  },
+  "author": "Zdenek Nemec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supermodel/models/issues"
+  },
+  "homepage": "https://github.com/supermodel/models#readme"
+}
