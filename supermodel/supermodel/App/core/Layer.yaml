@@ -1,0 +1,41 @@
+$id: http://supermodel.io/supermodel/App/core/Layer
+
+title: Layer
+type: object
+description: Supermodel layer, also known as context or domain. It represents a group of other layers and models.
+
+properties:
+  name:
+    type: string
+    description: Name of the layer
+
+  description:
+    type: string
+    description: Description of the layer (Markdown)
+
+  parent:
+    $ref: Layer
+
+  layers:
+    type: array
+    description: Layers nested in under this layer
+    items:
+      $ref: Layer
+
+  models:
+    type: array
+    description: Models in this layer
+    items:
+      $ref: Model
+
+  owner:
+    anyOf:
+      - $ref: http://supermodel.io/supermodel/App/collaboration/User
+      - $ref: http://supermodel.io/supermodel/App/collaboration/Team
+
+  collaborators:
+    type: array
+    items:
+      anyOf:
+        - $ref: http://supermodel.io/supermodel/App/collaboration/User
+        - $ref: http://supermodel.io/supermodel/App/collaboration/Team

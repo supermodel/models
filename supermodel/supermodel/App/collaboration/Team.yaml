@@ -1,0 +1,10 @@
+$id: http://supermodel.io/supermodel/collaboration/Team
+
+title: Team
+type: object
+
+properties:
+  members:
+    type: array
+    items:
+      $ref: User
