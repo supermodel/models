@@ -4,7 +4,7 @@
   "description": "Supermodel example and testing models",
   "main": "index.js",
   "scripts": {
-    "test": "supermodel schema validate supermodel/supermodel"
+    "test": "npx supermodel schema validate supermodel/supermodel"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/supermodel/models/issues"
   },
-  "homepage": "https://github.com/supermodel/models#readme"
+  "homepage": "https://github.com/supermodel/models#readme",
+  "dependencies": {
+    "supermodel-cli": "0.43.2"
+  }
 }
